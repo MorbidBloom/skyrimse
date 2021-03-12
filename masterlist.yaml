@@ -7605,7 +7605,9 @@ plugins:
 
   - name: 'iNeed.esp'
     url: [ 'https://www.nexusmods.com/skyrimspecialedition/mods/645/' ]
-    after: [ 'SkyUI_SE.esp' ]
+    after: 
+      - 'SkyUI_SE.esp'
+      - 'Sacrosanct - Vampires of Skyrim.esp'
     msg:
       - <<: *patch3rdParty_KPH_CACO
         condition: 'active("Complete Alchemy & Cooking Overhaul.esp") and not file("scripts/_snplayeralias.pex")'
@@ -10822,7 +10824,6 @@ plugins:
       - 'SanguinairVampirism.esp'
       - 'VampireLordPerksExpanded.esp'
     after:
-      - 'Complete Alchemy & Cooking Overhaul.esp'
       - 'DVA - Dynamic Vampire Appearance.esp'
       - 'RaceCompatibilityUSKPOverride.esp'
       - 'Requiem.esp'
